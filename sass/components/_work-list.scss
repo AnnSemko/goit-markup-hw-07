@@ -1,0 +1,116 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-contents {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--title-text-color);
+  margin: -15px;
+  list-style: none;
+}
+
+.work-list--container {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.work-list__title,
+.work-list__text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.work-list__title {
+  margin-bottom: 4px;
+}
+
+.item-flex {
+  box-sizing: border-box;
+}
+
+.work-list__link {
+  display: block;
+  text-decoration: none;
+
+  transition: var(--timing-function) var(--transition-duration);
+  transition-property: box-shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.work-list__thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-list__overlay {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  margin: 0;
+
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: var(--timing-function) var(--transition-duration);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition-property: background-color, transform;
+}
+
+.work-list__link:hover .work-list__overlay,
+.work-list__link:focus .work-list__overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.work-list__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-list__text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.work-list__item {
+  width: 370px;
+  margin: 15px 15px;
+}

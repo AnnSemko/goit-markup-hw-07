@@ -1,0 +1,193 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+  font-family: inherit;
+}
+
+.adress {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  padding: 0;
+}
+
+.adress__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--timing-function) var(--transition-duration);
+  transition-property: color;
+}
+
+.adress__link--white {
+  color: var(--white-color);
+}
+
+.page-footer__link {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Raleway, cursive;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.page-footer__logo--first {
+  color: var(--accent-color);
+}
+.page-footer__logo--second {
+  color: var(--white-color);
+}
+
+.adress__item {
+  display: block;
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.welcome__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.welcome {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.welcome__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.welcome__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: var(--timing-function) var(--transition-duration);
+  transition-property: background-color;
+
+  &:hover {
+    background-color: #2196f3;
+  }
+}
+
+.welcome__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.welcome__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: #fff;
+}
+
+.subscribe {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.subscribe__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sublist {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.subscribe input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.inmail {
+  padding-left: 16px;
+}
+
+.sublist__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  padding: 0;
+
+  transition: var(--timing-function) var(--transition-duration);
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #188ce8;
+  }
+}
+
+.sublist__icon {
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+}

@@ -1,0 +1,19 @@
+.main-nav__link {
+  font-family: Raleway, cursive;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.main-nav__logo--first {
+  color: var(--accent-color);
+}
+.main-nav__logo--second {
+  color: var(--title-text-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
